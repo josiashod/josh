@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josias Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/jquery.inview.min.js"></script>
+    <script src="./js/jquery.lazy.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <!-- class="wow fadeInUp" data-wow-delay="0.6s" -->
+    <div class="wrapper">
+        <ul id="nav">
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#work">Realisations</a></li>
+            <li><a href="#illustration">Illustrations</a></li>
+            <li><a href="#help">help</a></li>
+        </ul>
+        <div id="overview" class="hero">
+            <div class="hero-text">
+                <h1>Hi 👋, I'm Josias </h1>
+                <p>
+                    Je suis développeur full stack PHP / Python <b>(Junior)</b> et un amateur du javascript. Je suis
+                    Béninois.
+                    Cela fais maintenant 2ans que je me suis lancé dans le développement d'application web, d'api Rest
+                    etc...
+                    J'ambitione aprés quelques années, de pratique frutucteuses et avec un bagage intellectuelle
+                    conséquent, de me reconvertir dans l'intélligence artificielle
+                </p>
+                <div class="flex my-link">
+                    <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/josias_hod">twitter</a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/josiashod">github</a>
+                </div>
+            </div>
+        </div>
+        <section id="work" class="portfolio-section">
+            <div id="staticpage" class="card">
+                <div class="leftpage">
+                    <section class="content">
+                        <h3 class="title">Pages statiques</h3>
+                        <h4 class="sub-title">Responsive design - développement</h4>
+                        <p>
+                            Durant ces quelques années de pratique, j'ai eu à réalisé certaines interfaces dont je suis
+                            fier tels quel
+                            <a target="_blank" rel="noopener noreferrer" href="https://josiashod.github.io/404-not-found-page/">404 page not found</a> , <a
+                                href="https://josiashod.github.io/my-team-page/">My team page</a>
+                            , <a target="_blank" rel="noopener noreferrer" href="https://josiashod.github.io/tube/">Findyours</a> ,
+                            J'ai utilisé le HTML/CSS et un peu de JS pour certain.
+                        </p>
+
+                        <ul class="navigate">
+                            <li class="prev"><a href="#">↑</a></li>
+                            <li class="next"><a href="#dynamicpage">↓</a></li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="rightpage">
+                    <div class="slide lazy" style="background-image: url(./images/notfoundpage.png);"></div>
+                    <div class="slide lazy" style="background-image: url(./images/myteampage.png);"></div>
+                    <div class="slide lazy" style="background-image: url(./images/findyours.png);"></div>
+                </div>
+            </div>
+            <div id="dynamicpage" class="card reverse" .>
+                <div class="leftpage">
+                    <section class="content">
+                        <h3 class="title">Sites web</h3>
+                        <h4 class="sub-title">Dévéleppement d'application web</h4>
+                        <p>
+                            Bien vrai que les sites web statiques sont beau, un peu d'interaction avec l'utilisateurs
+                            est tout de même important. Il existe plusieurs technologies et framework dans le milieu du
+                            web. J'ai pour ma part choisi certains framework avec lesquelles j'ai travaillé.
+                            Avec Symfony (framework PHP) : <a target="_blank" rel="noopener noreferrer" href="https://lamanne.herokuapp.com/">La manne</a> & <a
+                                href="https://taniel.herokuapp.com/">Taniel</a> qui sonts des sites vitrines. <br>
+                            Avec du node Js un chat groupe <a target="_blank" rel="noopener noreferrer" href="https://lets-speak-chat.herokuapp.com/">Let's
+                                speak</a> et un uploader d'image <a
+                                href="https://josh-image-uploader.herokuapp.com/">Image uploader</a>.
+                        </p>
+
+                        <ul class="navigate">
+                            <li class="prev"><a href="#staticpage">↑</a></li>
+                            <li class="next"><a href="#game">↓</a></li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="rightpage">
+                    <div class="slide lazy" style="background-image: url(./images/web/manne_1.png);"></div>
+                    <div class="slide lazy" style="background-image: url(./images/web/manne_2.png);"></div>
+                    <div class="slide lazy" style="background-image: url(./images/web/manne_3.png);"></div>
+                    <div class="slide lazy" style="background-image: url(./images/web/taniel_1.png);"></div>
+                    <div class="slide lazy" style="background-image: url(./images/web/taniel_footer.png);"></div>
+                    <div class="slide lazy" style="background-image: url(./images/web/chat_group.png);"></div>
+                    <div class="slide lazy" style="background-image: url(./images/web/image_uloader.png);"></div>
+                </div>
+            </div>
+            <div id="game" class="card">
+                <div class="leftpage">
+                    <section class="content">
+                        <h3 class="title">Memory card</h3>
+                        <h4 class="sub-title">javascript exemple</h4>
+                        <p>
+                            Un jeu de mémoire que j'ai réalisé avec du HTML/CSS et du JS
+                            <a target="_blank" rel="noopener noreferrer" href="https://josiashod.github.io/memoryCard/">Memory Card</a>
+                        </p>
+
+                        <ul class="navigate">
+                            <li class="prev"><a href="#dynamicpage">↑</a></li>
+                            <li class="next"><a href="#illustration">↓</a></li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="rightpage">
+                    <div class="slide lazy" style="background-image: url(./images/game_1.png);"></div>
+                    <div class="slide lazy" style="background-image: url(./images/game_2.png);"></div>
+                    <div class="slide lazy" style="background-image: url(./images/game_3.png);"></div>
+                    <div class="slide lazy" style="background-image: url(./images/game_4.png);"></div>
+                </div>
+            </div>
+        </section>
+        <section id="illustration" class="portfolio-section">
+            <div class="card reverse">
+                <div class="leftpage">
+                    <section class="content">
+                        <h3 class="title">Illustrations</h3>
+                        <h4 class="sub-title">Drawing with css</h4>
+                        <p>
+                            L'illustration avec du css, fais partie d'un de mes passe-temps favoris. C'est à la fois
+                            challengeant, frustrant lorsqu'on est face au mur et satisfaisant lorsqu'on a la solutions.
+                            Il reste encore beaucoup de choses réalisable avec le css que j'ignore encore mais que
+                            j'espere connaître bientôt. Voici quelques une de mes réalisations :
+                            <a target="_blank" rel="noopener noreferrer" href="https://codepen.io/hod15/full/mdmrXrW">sky</a> ,
+                            <a target="_blank" rel="noopener noreferrer" href="https://codepen.io/hod15/full/dyvEPGP">Bear</a> ,
+                            <a target="_blank" rel="noopener noreferrer" href="https://codepen.io/hod15/full/OJWqyge">Sack Logo</a> ,
+                            <a target="_blank" rel="noopener noreferrer" href="https://codepen.io/hod15/full/PoWOWwq">Credit card</a>
+                        </p>
+
+                        <ul class="navigate">
+                            <li class="prev"><a href="#game">↑</a></li>
+                            <li class="next"><a href="#help">↓</a></li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="rightpage">
+                    <div class="slide lazy" style="background-image: url(./images/illustrations/sky.png);"></div>
+                    <div class="slide lazy" style="background-image: url(./images/illustrations/bear.png);"></div>
+                    <div class="slide lazy" style="background-image: url(./images/illustrations/bear-eye.png);"></div>
+                    <div class="slide lazy" style="background-image: url(./images/illustrations/slack-light.png);">
+                    </div>
+                    <div class="slide lazy" style="background-image: url(./images/illustrations/slack-dark.png);"></div>
+                    <div class="slide lazy" style="background-image: url(./images/illustrations/visa-card.png);"></div>
+                </div>
+            </div>
+        </section>
+        <section id="help">
+            <div class="help">
+                <div class="help-text">
+                    <h1>Le problème 😔 🙁</h1>
+                    <p>
+                        Jusqu'ici j'ai fais des trucs intéressants mais médiocre. Ce que je veux c'est fais des truc
+                        intéressant et d'un niveau techniquement élevé. Mais pour ça il me faut une machine, une bonne
+                        machine.
+                        Pour cela j'épargne de l'argent pour acheter nouvelle machine qui est bonne, une machine qui
+                        m'aidera à évoluer rapidement dans mon domaine.
+                        Si j'ai fais ce site c'est pour demander de votre aide, avec mon anniversaire qui arrive le 15
+                        septembre un geste de votre part serait la bienvenue.
+                    </p>
+                    <div class="flex my-link">
+                        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/josias_hod">twitter</a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/josiashod">github</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

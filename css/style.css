@@ -1,0 +1,328 @@
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+/* CSS */
+@import "./animate.css";
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #1C1C1C;
+    color: #7B7D7A;
+    font-family: 'Chakra Petch', sans-serif;
+}
+h1,h2,
+h3,h4,
+h5,h6{
+    font-family: 'Tourney', cursive;
+    color: #ABADA9;
+}
+
+.wrapper {
+    padding-bottom: 50px;
+    margin: 0 auto;
+}
+
+ul#nav{
+    list-style-type: none;
+    position: fixed;
+    top: auto;
+    left: 0;
+    right: 0;
+    z-index: 15;
+    text-align: center;
+    margin: 0;
+    background-color: #E3E4DE;
+    padding: 6px 0;
+}
+
+ul#nav li {
+    display: inline-block;
+    letter-spacing: .25px;
+    cursor: pointer;
+}
+
+ul#nav a {
+    text-decoration: none;
+    font-weight: 300;
+    display: inline-block;
+    padding: 10px 5px;
+    cursor: pointer;
+    font-variant: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #1C1C1C;
+}
+
+div.hero{
+    font-size: calc(10px + 2vw);
+    padding: 10vh 5vw 5vw;
+    margin-bottom: 15rem;
+}
+div.hero h1{
+    margin-bottom: 1rem;
+}
+
+div.hero .hero-text{
+    /* width: 75%; */
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.hero .my-link{
+    margin-top: 4rem;
+}
+div.hero .my-link a:first-child{
+    margin-left: 0;
+}
+
+div.hero .my-link a{
+    margin-left: .5rem;
+}
+
+div.hero .my-link a,
+p a{
+    color: #FAFAFF;
+    cursor: pointer;
+    font-weight: 300;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-bottom: 1px dashed #7B7D7A;
+}
+
+div.hero .my-link a:hover,
+p a:hover{
+    color: #FAFAFF;
+    border-bottom: 1px solid #FAFAFF;
+}
+
+
+.help{
+    font-size: calc(10px + 2vw);
+    padding: 10vh 5vw 5vw;
+}
+div.help h1{
+    margin-bottom: 1rem;
+}
+
+div.help .help-text{
+    /* width: 75%; */
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.help .my-link{
+    margin-top: 4rem;
+}
+div.help .my-link a:first-child{
+    margin-left: 0;
+}
+
+div.help .my-link a{
+    margin-left: .5rem;
+}
+div.help .my-link a{
+    color: #FAFAFF;
+    cursor: pointer;
+    font-weight: 300;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-bottom: 1px dashed #7B7D7A;
+}
+
+div.help .my-link a:hover{
+    color: #FAFAFF;
+    border-bottom: 1px solid #FAFAFF;
+}
+
+
+/* section */
+section.portfolio-section{
+    padding-right: 5vw;
+    padding-left: 5vw;
+    margin-bottom: 6rem;
+}
+
+
+section.portfolio-section .card{
+    display: block;
+}
+
+section.portfolio-section .title{
+    font-size: calc(10px + 2vw);
+    margin-bottom: 1rem;
+    /* opacity: 0; */
+    transition: opacity .5s;
+}
+
+section.portfolio-section .sub-title{
+    font-size: calc(4px + .8vw);
+    margin-bottom: 1rem;
+}
+
+section.portfolio-section p{
+    /* opacity: 0; */
+    margin-top: 2rem;
+    font-size: 15px;
+    transition: opacity .5s;
+}
+
+/* section.portfolio-section ul li:first-child{
+    margin-right: 1rem;
+} */
+
+section.portfolio-section .title.visible,
+section.portfolio-section p.visible{
+    opacity: 1;
+}
+
+.navigate {
+    display: none;
+}
+
+.leftpage .content{
+    min-height: 40vh;
+    overflow: visible;
+}
+
+.leftpage, .rightpage {
+    width: 100%;
+}
+
+.rightpage .slide {
+    position: static !important;
+}
+
+.rightpage .slide {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+    margin-bottom: 5vw;
+    margin-right: 0;
+    /* opacity: 0; */
+    transition: opacity .5s;
+}
+
+.rightpage .slide .visible{
+    opacity: 1;
+}
+
+@media (max-width: 1024px){
+    ul#nav{
+        bottom: 0;
+    }
+}
+/*lg breakpoint*/
+@media (min-width: 1024px){
+    ul#nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: none;
+        z-index: 15;
+        text-align: center;
+        margin: 0;
+        padding: 12px 2vw 5vw ;
+        background-color: transparent;
+    }
+    
+    
+    ul#nav a {
+        color:  #7B7D7A;
+    }
+    
+    ul#nav li:first-child a {
+        padding: 10px 5px 10px 10px;
+    }
+      
+    
+    ul#nav a:hover, ul#nav li.active a {
+        color: #FAFAFF;
+        cursor: pointer;
+    }
+
+    div.hero{
+        margin-bottom: 10rem;
+    }
+
+    section.portfolio-section .card{
+        display: flex;
+    }
+    section.portfolio-section .card.reverse{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .leftpage{
+        width: 35%;
+        position: relative;
+    }
+
+    .leftpage .content{
+        padding: 30vh 5vw 0;
+        position: sticky;
+        top: 0;
+        min-height: 75vh;
+        overflow: hidden;
+    }
+
+    .rightpage{
+        width: 65%;
+        background-repeat: no-repeat;
+        background-size: 30px auto;
+        background-position: 25% 50%;
+        background-attachment: fixed;
+        padding-top: 4rem;
+    }
+
+    .rightpage .slide{
+        background-size: contain;
+    }
+
+    .navigate{
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        display: block;
+        top: 90vh;
+        z-index: 4;
+        /* opacity: 0; */
+        transition: opacity .5s;
+    }
+    
+    .navigate li{
+        list-style-type: none;
+        display: inline-block;
+        width: 30px;
+    }
+    
+    .navigate li a {
+        display: block;
+        cursor: pointer;
+        display: block;
+        padding: 5px;
+        width: 15px;
+        height: 15px;
+        margin: 0 15px 0 0;
+        color: #ABADA9;
+        text-decoration: none;
+        font-size: 40px;
+        font-weight: 200;
+    }
+    
+    .navigate li a:hover {
+        color: white;
+    }
+}
